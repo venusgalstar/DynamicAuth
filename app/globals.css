@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dynamic-shadow-dom {
+	--dynamic-connect-button-background: #000;
+	--dynamic-connect-button-color: #000;
+	--dynamic-connect-button-text: #fff;
+
+	--dynamic-connect-button-color-hover: #fff;
+	--dynamic-connect-button-border-hover: 2px solid #000;
+	--dynamic-connect-button-shadow-hover: 0px 3px 0px #000000;
+}
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	/* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
